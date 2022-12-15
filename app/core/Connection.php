@@ -1,5 +1,7 @@
 <?php
 
+use Config\Core as Config;
+
 abstract class Connection
 {
     protected static PDO $pdo;

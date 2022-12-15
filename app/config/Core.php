@@ -1,6 +1,7 @@
 <?php
 
-class Config
+namespace Config;
+class Core
 {
     const APP_NAME = "MVC";
 
