@@ -17,7 +17,7 @@ abstract class Connection
     {
         try {
             self::$pdo = new PDO(
-                'mysql:host=' . Config::HOSTNAME . ';dbname=' . Config::DBNAME,
+                'mysql:host=' . Config::HOSTNAME . ';port=' . Config::PORT . ';dbname=' . Config::DBNAME,
                 Config::USERNAME,
                 Config::PASSWORD,
                 Config::OPTIONS

@@ -23,5 +23,6 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: secret
       MYSQL_DATABASE: docker-php
+    container_name: mvc_db
 volumes:
   mysqldata:
