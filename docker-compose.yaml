@@ -5,12 +5,14 @@ services:
       - "80:80"
     volumes:
       - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+    container_name: mvc_web
   app:
     build:
       dockerfile: ./php/Dockerfile
     volumes:
       - /var/www/html/vendor
       - ./app:/var/www/html
+    container_name: mvc_app
   db:
     image: mysql:8.0
     volumes:
