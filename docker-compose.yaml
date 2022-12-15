@@ -26,5 +26,13 @@ services:
       MYSQL_PASSWORD: secret
       MYSQL_DATABASE: docker-php
     container_name: mvc_db
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+    container_name: mvc_pma
 volumes:
   mysqldata:
