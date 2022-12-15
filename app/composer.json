@@ -1,0 +1,30 @@
+{
+    "name": "khamdullaevuz/mvc",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Elbek Khamdullaev",
+            "email": "elbek.khamdullaev@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": [
+          "core"
+        ],
+        "psr-4": {
+            "Controllers\\": "controllers",
+            "Models\\": "models"
+        },
+        "files": [
+            "routes/web.php"
+        ]
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-pdo": "*",
+        "ext-curl": "*",
+        "ext-mbstring": "*"
+    }
+}
